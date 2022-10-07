@@ -1,0 +1,137 @@
+:root{
+    --main-color:#45AF2A;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.settings-box{
+    position: fixed;
+    top: 0;
+    left: -150px;
+    z-index: 10000;
+    background-color: white;
+    width: 150px;
+    min-height: 100vh;
+    transition: .7s;
+}
+.opened{
+    left: 0;
+}
+.settings-box .toggle{
+    position: absolute;
+    right: -32px;
+    top: 80px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.settings-box .fa-gear{
+    padding: 6px 0;
+    width: 32px;
+}
+.settings-box .options-box{
+    padding: 16px;
+}
+.settings-box .options-box h4{
+    margin: 0;
+    color: #666;
+}
+.settings-box .options-box .colors-list{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.settings-box .options-box .colors-list li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+}
+.settings-box .options-box .colors-list .active{
+    opacity: 1;
+}
+.settings-box .options-box .colors-list li:first-child{
+    background-color: #45AF2A;
+}
+.settings-box .options-box .colors-list li:nth-child(2){
+    background-color: #e91e63;
+}
+.settings-box .options-box .colors-list li:nth-child(3){
+    background-color: #009688;
+}
+.settings-box .options-box .colors-list li:nth-child(4){
+    background-color: #03a9f4;
+}
+.settings-box .options-box .colors-list li:nth-child(5){
+    background-color: #E53935;
+}
+
+/* Start Landing Page  */
+.landing{
+    min-height: 100vh;
+    background-image: url("../imgs/83-838362_web-developer.jpg");
+    background-size: cover;
+    position: relative;
+}
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    color: white;
+}
+.header .logo{
+    width: 300px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.header .lists{
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+.header .lists li{
+    display: inline-block;
+    margin-left: 15px;
+    text-align: right;
+}
+.header .lists li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color .6s;
+}
+.header .lists li a:hover,
+.header .lists li .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+.text{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+.text h1 span{
+    color: var(--main-color);
+    font-size: 45px;
+}
+.text h1{
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+.text p{
+    line-height: 1.6;
+    font-size: 20px;
+}
+/* End Landing Page  */
